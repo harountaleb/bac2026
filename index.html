@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة المراجعة النهائية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #0f172a; /* Slate 900 */
+            background-image: radial-gradient(circle at top right, #1e293b, #0f172a);
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        /* تأثيرات إضافية للصفحة التفاعلية */
+        .hover-glow:hover {
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4 sm:p-8 text-white antialiased">
+
+    <!-- Landing Page Container -->
+    <div id="poster" class="relative w-full max-w-2xl bg-slate-800 rounded-3xl shadow-2xl overflow-hidden border border-slate-700">
+        
+        <!-- Header Section -->
+        <div class="relative bg-gradient-to-r from-blue-700 to-indigo-900 p-8 sm:p-12 text-center overflow-hidden">
+            <div class="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 rounded-full border-4 border-white/10"></div>
+            <div class="absolute bottom-0 left-0 -ml-16 -mb-16 w-48 h-48 rounded-full border-4 border-white/10"></div>
+            
+            <div class="relative z-10">
+                <span class="inline-block py-1 px-4 rounded-full bg-yellow-400 text-slate-900 font-bold text-sm mb-4 shadow-lg transform -rotate-2">
+                    🔥 حان وقت الجد والحسم!
+                </span>
+                <h1 class="text-4xl sm:text-5xl font-black text-white mb-2 tracking-tight">
+                    منصة المراجعة النهائية
+                </h1>
+                <p class="text-blue-200 text-lg sm:text-xl font-medium mt-3">
+                    حمل ملفاتك وابدأ أقوى انطلاقة لضمان العلامة الكاملة
+                </p>
+            </div>
+        </div>
+
+        <!-- Content Section (Links & Menus) -->
+        <div class="p-6 sm:p-10 space-y-4 bg-slate-900">
+            
+            <!-- Item 1: Functions (Direct Link) -->
+            <!-- ضع رابط جوجل درايف الخاص بملف الدوال مكان علامة # في href -->
+            <a href="#" target="_blank" class="group block glass-card rounded-2xl p-5 transform transition hover:-translate-y-1 hover:shadow-lg hover:border-blue-500/50 hover:bg-slate-800 duration-300">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-start space-x-4 space-x-reverse">
+                        <div class="flex-shrink-0 bg-blue-600/20 p-3 rounded-xl border border-blue-500/30 text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16c1.5-4.5 4.5-9 10-10"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-1 group-hover:text-blue-300 transition">ملف مراجعة الدوال العددية</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed pr-1">جميع الأفكار من السهلة إلى العميقة.</p>
+                        </div>
+                    </div>
+                    <div class="text-slate-500 group-hover:text-blue-400 transition transform group-hover:scale-110">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Item 2: Sequences (Direct Link) -->
+            <!-- ضع رابط المتتاليات مكان # -->
+            <a href="#" target="_blank" class="group block glass-card rounded-2xl p-5 transform transition hover:-translate-y-1 hover:shadow-lg hover:border-green-500/50 hover:bg-slate-800 duration-300">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-start space-x-4 space-x-reverse">
+                        <div class="flex-shrink-0 bg-green-600/20 p-3 rounded-xl border border-green-500/30 text-green-400 group-hover:bg-green-600 group-hover:text-white transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-1 group-hover:text-green-300 transition">تمرين شامل: المتتاليات العددية</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed pr-1">تذكير بالقوانين + المجاميع والجداءات.</p>
+                        </div>
+                    </div>
+                    <div class="text-slate-500 group-hover:text-green-400 transition transform group-hover:scale-110">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Item 3: Probability (Interactive Dropdown) -->
+            <div class="relative">
+                <button onclick="toggleProbability()" class="w-full text-right group block glass-card rounded-2xl p-5 transform transition hover:shadow-lg hover:border-purple-500/50 hover:bg-slate-800 duration-300 focus:outline-none">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-start space-x-4 space-x-reverse">
+                            <div class="flex-shrink-0 bg-purple-600/20 p-3 rounded-xl border border-purple-500/30 text-purple-400 group-hover:bg-purple-600 group-hover:text-white transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><circle cx="15.5" cy="8.5" r="1.5"/><circle cx="15.5" cy="15.5" r="1.5"/><circle cx="8.5" cy="15.5" r="1.5"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-1 group-hover:text-purple-300 transition">محور الاحتمالات (ملفات متعددة)</h3>
+                                <p class="text-slate-400 text-sm leading-relaxed pr-1">اضغط هنا لفتح ملخصات وسلاسل الاحتمالات.</p>
+                            </div>
+                        </div>
+                        <div id="prob-chevron" class="text-slate-500 group-hover:text-purple-400 transition-transform duration-300 transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                    </div>
+                </button>
+
+                <!-- Dropdown Menu for Probability -->
+                <div id="prob-menu" class="hidden overflow-hidden transition-all duration-300 mt-2 space-y-2 px-2 sm:px-4">
+                    
+                    <!-- Sub-item: Summary -->
+                    <!-- ضع رابط الملخص مكان # -->
+                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-purple-500/50 hover:bg-slate-700 transition group">
+                        <div class="flex items-center space-x-3 space-x-reverse">
+                            <svg class="text-red-400" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                            <span class="text-slate-200 font-medium group-hover:text-purple-300">الملخص الشامل</span>
+                        </div>
+                        <span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span>
+                    </a>
+
+                    <!-- Sub-item: Comprehensive Exercise -->
+                    <!-- ضع رابط التمرين الشامل مكان # -->
+                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-purple-500/50 hover:bg-slate-700 transition group">
+                        <div class="flex items-center space-x-3 space-x-reverse">
+                            <svg class="text-blue-400" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                            <span class="text-slate-200 font-medium group-hover:text-purple-300">التمرين الشامل</span>
+                        </div>
+                        <span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span>
+                    </a>
+
+                    <!-- Sub-item: Series -->
+                    <!-- ضع رابط السلاسل مكان # -->
+                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-purple-500/50 hover:bg-slate-700 transition group">
+                        <div class="flex items-center space-x-3 space-x-reverse">
+                            <svg class="text-green-400" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                            <span class="text-slate-200 font-medium group-hover:text-purple-300">سلاسل التمارين</span>
+                        </div>
+                        <span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 4: 10 Exams (Direct Link) -->
+            <!-- ضع رابط المواضيع مكان # -->
+            <a href="#" target="_blank" class="group block glass-card rounded-2xl p-5 transform transition hover:-translate-y-1 hover:shadow-lg hover:border-yellow-500/50 hover:bg-slate-800 duration-300 relative overflow-hidden">
+                <div class="absolute top-0 left-0 bg-yellow-500 text-slate-900 font-bold px-3 py-1 text-xs rounded-br-lg z-10 shadow-md">
+                    جاهزية تامة
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-start space-x-4 space-x-reverse">
+                        <div class="flex-shrink-0 bg-yellow-600/20 p-3 rounded-xl border border-yellow-500/30 text-yellow-400 group-hover:bg-yellow-500 group-hover:text-slate-900 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-1 group-hover:text-yellow-300 transition">10 مواضيع شاملة للمراجعة</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed pr-1">مواضيع مقترحة لتقييم مستواك والتدرب على الامتحان.</p>
+                        </div>
+                    </div>
+                    <div class="text-slate-500 group-hover:text-yellow-400 transition transform group-hover:scale-110">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="bg-slate-950 p-6 text-center border-t border-slate-800">
+            <p class="text-slate-300 font-bold text-lg">
+                🎯 استعدوا بقوة.. فالنجاح حليف من يجتهد!
+            </p>
+            <p class="text-slate-500 text-sm mt-2">
+                بالتوفيق لجميع التلاميذ في شهادة البكالوريا
+            </p>
+        </div>
+
+    </div>
+
+    <!-- JavaScript to handle the probability dropdown menu -->
+    <script>
+        function toggleProbability() {
+            const menu = document.getElementById('prob-menu');
+            const chevron = document.getElementById('prob-chevron');
+            
+            if (menu.classList.contains('hidden')) {
+                // فتح القائمة
+                menu.classList.remove('hidden');
+                // تدوير السهم
+                chevron.classList.add('rotate-180');
+            } else {
+                // إغلاق القائمة
+                menu.classList.add('hidden');
+                // إعادة السهم لوضعه الطبيعي
+                chevron.classList.remove('rotate-180');
+            }
+        }
+    </script>
+</body>
+</html>
