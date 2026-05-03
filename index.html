@@ -7,6 +7,7 @@
     <link rel="icon" type="image/jpeg" href="logo.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Tajawal', sans-serif;
@@ -17,6 +18,29 @@
             background: rgba(30, 41, 59, 0.7);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* تأثيرات الشارات (Labels) */
+        @keyframes shimmer {
+            0% { background-position: 200% center; }
+            100% { background-position: -200% center; }
+        }
+        .label-important {
+            background: linear-gradient(90deg, #ef4444 0%, #dc2626 25%, #991b1b 50%, #dc2626 75%, #ef4444 100%);
+            background-size: 200% auto;
+            animation: shimmer 3s linear infinite;
+            box-shadow: 0 0 12px rgba(239, 68, 68, 0.7), inset 0 0 5px rgba(255, 255, 255, 0.4);
+        }
+
+        /* تأثير المقولة السفلية الأنيقة (ذهبي ملكي) */
+        .quote-effect {
+            font-family: 'Playfair Display', serif;
+            background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 4s linear infinite;
+            text-shadow: 0 4px 20px rgba(191, 149, 63, 0.3);
         }
     </style>
 </head>
@@ -94,11 +118,10 @@
                     </div>
                 </button>
                 <div id="func-menu" class="hidden overflow-hidden transition-all duration-300 mt-2 space-y-2 px-2 sm:px-4">
-                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-blue-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-blue-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-blue-300">ملخص</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
-                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-blue-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-blue-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-blue-300">تمرين شامل للدوال اللوغارتمية</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
-                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-blue-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-blue-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-blue-300">تمرين شامل للتركيب</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
-                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-blue-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-blue-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-blue-300">انشاء بيان باستعمال بيان آخر</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
-                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-blue-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-blue-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg><span class="text-slate-200 font-medium group-hover:text-blue-300">مجلة مراجعة الدوال العددية (كافية ووافية)</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="func-summary" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-blue-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-blue-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-blue-300">ملخص</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="func-log" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-blue-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-blue-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-blue-300">تمرين شامل للدوال اللوغارتمية</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="func-comp" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-blue-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-blue-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-blue-300">تمرين شامل للتركيب</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="func-graph" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-blue-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-blue-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-blue-300">انشاء بيان باستعمال بيان آخر</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
                 </div>
             </div>
 
@@ -119,10 +142,10 @@
                     </div>
                 </button>
                 <div id="seq-menu" class="hidden overflow-hidden transition-all duration-300 mt-2 space-y-2 px-2 sm:px-4">
-                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-green-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-green-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-green-300">الملخص</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
-                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-green-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-green-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-green-300">تمرين شامل (المجاميع)</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
-                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-green-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-green-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-green-300">تمرين شاملة 2</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
-                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-green-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-green-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-green-300">البكالوريات السابقة</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="seq-summary" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-green-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-green-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-green-300">الملخص</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="seq-sum" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-green-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-green-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-green-300">تمرين شامل (المجاميع)</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="seq-ex2" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-green-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-green-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-green-300">تمرين شاملة 2</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="seq-bac" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-green-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-green-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-green-300">البكالوريات السابقة</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
                 </div>
             </div>
 
@@ -143,8 +166,8 @@
                     </div>
                 </button>
                 <div id="int-menu" class="hidden overflow-hidden transition-all duration-300 mt-2 space-y-2 px-2 sm:px-4">
-                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-pink-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-pink-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-pink-300">البكالوريات السابقة</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
-                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-pink-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-pink-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="text-slate-200 font-medium group-hover:text-pink-300">حل البكالوريات السابقة</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="int-summary" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-pink-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-pink-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-pink-300">ملخص</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="int-bac" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-pink-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-pink-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-pink-300">بكالوريات</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
                 </div>
             </div>
 
@@ -165,10 +188,11 @@
                     </div>
                 </button>
                 <div id="prob-menu" class="hidden overflow-hidden transition-all duration-300 mt-2 space-y-2 px-2 sm:px-4">
-                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-purple-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-purple-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-purple-300">ملخص</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
-                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-purple-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-purple-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-purple-300">تمرين شامل السحب</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
-                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-purple-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-purple-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-purple-300">تمرين شامل تشكيل لجان</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
-                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-purple-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-purple-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-purple-300">البكالوريات السابقة</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="prob-summary" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-purple-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-purple-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-purple-300">ملخص</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="prob-draw-1" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-purple-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-purple-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-purple-300">تمرين شامل السحب 1</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="prob-draw-2" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-purple-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-purple-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-purple-300">تمرين شامل السحب 2</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="prob-com" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-purple-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-purple-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-purple-300">تمرين شامل تشكيل لجان</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="prob-bac" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-purple-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-purple-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-purple-300">البكالوريات السابقة</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
                 </div>
             </div>
 
@@ -189,10 +213,10 @@
                     </div>
                 </button>
                 <div id="arith-menu" class="hidden overflow-hidden transition-all duration-300 mt-2 space-y-2 px-2 sm:px-4">
-                    <a href="https://drive.google.com/file/d/1yfs2DtLA1NVi4XnRdlZJ_aTs2C40AtdY/view?usp=sharing" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-teal-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-teal-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-teal-300">ملخص</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
-                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-teal-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-teal-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-teal-300">سلسلة التمرينات الواردة في البكالوريا</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
-                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-teal-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-teal-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-teal-300">سلسلة تمرينات خارجية في الأعداد والحساب</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
-                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-teal-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-teal-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg><span class="text-slate-200 font-medium group-hover:text-teal-300">طرائق (ملف رائع)</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="arith-summary" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-teal-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-teal-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-teal-300">ملخص</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="arith-bac" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-teal-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-teal-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-teal-300">سلسلة التمرينات الواردة في البكالوريا</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="arith-ext" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-teal-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-teal-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-teal-300">سلسلة تمرينات خارجية في الأعداد والحساب</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="arith-methods" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-teal-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-teal-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg><span class="text-slate-200 font-medium group-hover:text-teal-300">طرائق (ملف رائع)</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
                 </div>
             </div>
 
@@ -213,16 +237,57 @@
                     </div>
                 </button>
                 <div id="comp-menu" class="hidden overflow-hidden transition-all duration-300 mt-2 space-y-2 px-2 sm:px-4">
-                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-orange-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-orange-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-orange-300">الملخص</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
-                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-orange-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-orange-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-orange-300">تمرين شامل</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
-                    <a href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-orange-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-orange-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-orange-300">البكالوريات السابقة</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="comp-summary" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-orange-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-orange-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-orange-300">الملخص</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="comp-ex" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-orange-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-orange-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-orange-300">تمرين شامل</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="comp-points" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-orange-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-orange-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-orange-300">تمرين شامل لمجموعة النقط مع الحل</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
+                    <a id="comp-bac" href="#" target="_blank" class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 hover:border-orange-500/50 hover:bg-slate-700 transition group"><div class="flex items-center space-x-3 space-x-reverse"><svg class="text-orange-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="text-slate-200 font-medium group-hover:text-orange-300">البكالوريات السابقة</span></div><span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span></a>
                 </div>
             </div>
 
-            <!-- 7. 10 مواضيع شاملة -->
+            <!-- مجلة مراجعة الدوال العددية (مستقلة) -->
+            <a id="main-func-magazine" href="#" target="_blank" class="group block glass-card rounded-2xl p-5 transform transition hover:-translate-y-1 hover:shadow-lg hover:border-blue-500/50 hover:bg-slate-800 duration-300 relative overflow-hidden">
+                <!-- شارة مهمة جداً (Label) مع تأثير النبض -->
+                <div class="absolute top-0 left-0 label-important text-white font-bold px-4 py-1 text-xs rounded-br-lg z-10 border-b border-r border-red-500">مهمة جداً 📌</div>
+                
+                <div class="flex items-center justify-between mt-2">
+                    <div class="flex items-start space-x-4 space-x-reverse">
+                        <div class="flex-shrink-0 bg-blue-600/20 p-3 rounded-xl border border-blue-500/30 text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-1 group-hover:text-blue-300 transition">مجلة مراجعة الدوال العددية</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed pr-1">كل أسئلة الدوال مجمعة في ملف واحد، لا تفوتها.</p>
+                        </div>
+                    </div>
+                    <div class="text-slate-500 group-hover:text-blue-400 transition transform group-hover:scale-110">
+                        <span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 7. تمرينات الاختيارات المتعددة (QCM) -->
+            <a id="qcm-file" href="#" target="_blank" class="group block glass-card rounded-2xl p-5 transform transition hover:-translate-y-1 hover:shadow-lg hover:border-indigo-500/50 hover:bg-slate-800 duration-300 relative overflow-hidden">
+                <div class="absolute top-0 left-0 label-important text-white font-bold px-4 py-1 text-xs rounded-br-lg z-10 border-b border-r border-red-500">مهمة جداً 📌</div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-start space-x-4 space-x-reverse">
+                        <div class="flex-shrink-0 bg-indigo-600/20 p-3 rounded-xl border border-indigo-500/30 text-indigo-400 group-hover:bg-indigo-600 group-hover:text-white transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-1 group-hover:text-indigo-300 transition">تمرينات الاختيارات المتعددة (QCM)</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed pr-1">تجميعية لأسئلة الاختيار من متعدد لتدريب سرعة البديهة.</p>
+                        </div>
+                    </div>
+                    <div class="text-slate-500 group-hover:text-indigo-400 transition transform group-hover:scale-110">
+                        <span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 8. 10 مواضيع شاملة -->
             <div class="relative">
                 <button onclick="toggleMenu('exams-menu', 'exams-chev')" class="w-full text-right group block glass-card rounded-2xl p-5 transform transition hover:shadow-lg hover:border-yellow-500/50 hover:bg-slate-800 duration-300 focus:outline-none relative overflow-hidden">
-                    <div class="absolute top-0 left-0 bg-yellow-500 text-slate-900 font-bold px-3 py-1 text-xs rounded-br-lg z-10 shadow-md">جاهزية تامة</div>
+                    <div class="absolute top-0 left-0 label-important text-white font-bold px-4 py-1 text-xs rounded-br-lg z-10 border-b border-r border-red-500">مهمة جداً 📌</div>
                     <div class="flex items-center justify-between">
                         <div class="flex items-start space-x-4 space-x-reverse">
                             <div class="flex-shrink-0 bg-yellow-600/20 p-3 rounded-xl border border-yellow-500/30 text-yellow-400 group-hover:bg-yellow-500 group-hover:text-slate-900 transition">
@@ -243,33 +308,23 @@
                 </div>
             </div>
 
-            <!-- 8. تمرينات الاختيارات المتعددة (QCM) -->
-            <a href="#" target="_blank" class="group block glass-card rounded-2xl p-5 transform transition hover:-translate-y-1 hover:shadow-lg hover:border-indigo-500/50 hover:bg-slate-800 duration-300 relative overflow-hidden">
-                <div class="absolute top-0 left-0 bg-indigo-500 text-white font-bold px-3 py-1 text-xs rounded-br-lg z-10 shadow-md">اختبر ذكاءك</div>
-                <div class="flex items-center justify-between">
-                    <div class="flex items-start space-x-4 space-x-reverse">
-                        <div class="flex-shrink-0 bg-indigo-600/20 p-3 rounded-xl border border-indigo-500/30 text-indigo-400 group-hover:bg-indigo-600 group-hover:text-white transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-white mb-1 group-hover:text-indigo-300 transition">تمرينات الاختيارات المتعددة (QCM)</h3>
-                            <p class="text-slate-400 text-sm leading-relaxed pr-1">تجميعية لأسئلة الاختيار من متعدد لتدريب سرعة البديهة.</p>
-                        </div>
-                    </div>
-                    <div class="text-slate-500 group-hover:text-indigo-400 transition transform group-hover:scale-110">
-                        <span class="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">PDF</span>
-                    </div>
-                </div>
-            </a>
-
         </div>
 
         <!-- Footer -->
-        <div class="bg-slate-950 p-6 text-center border-t border-slate-800">
-            <p class="text-slate-300 font-bold text-lg">
-                🎯 استعدوا بقوة.. فالنجاح حليف من يجتهد!
+        <div class="relative bg-slate-950 p-10 text-center border-t border-slate-800 flex flex-col items-center overflow-hidden">
+            <!-- تأثير إضاءة خافت في الخلفية -->
+            <div class="absolute inset-0 flex justify-center items-center pointer-events-none opacity-20">
+                <div class="w-64 h-32 bg-yellow-500 blur-3xl rounded-full"></div>
+            </div>
+            
+            <p class="quote-effect text-3xl sm:text-4xl mb-4 tracking-wider leading-relaxed relative z-10" dir="ltr">
+                "Where there's a will, there's a way"
             </p>
-            <p class="text-slate-500 text-sm mt-2">
+            
+            <!-- خط فاصل أنيق -->
+            <div class="w-24 h-px bg-gradient-to-r from-transparent via-slate-500 to-transparent mb-4 relative z-10"></div>
+            
+            <p class="text-slate-400 text-sm font-medium relative z-10">
                 بالتوفيق لجميع التلاميذ في شهادة البكالوريا
             </p>
         </div>
@@ -277,6 +332,81 @@
     </div>
 
     <script>
+        // ===============================================================
+        // ⚙️ منطقة إعداد الروابط: ضع روابط ملفاتك هنا بدلاً من علامة #
+        // ===============================================================
+        
+        // 1. روابط الملفات المباشرة (الملخصات والتمارين)
+        const FILE_LINKS = {
+            // -- الدوال العددية --
+            "func-summary": "https://drive.google.com/file/d/1K_YNJbnk1yPhgS3wnSqZDd3tYdFNG9Ho/view?usp=sharing",        // ملخص
+            "func-log": "https://drive.google.com/file/d/1mBjslT46K0gZat10vsqG93n0p0ZREgFE/view?usp=sharing",            // تمرين شامل للدوال اللوغارتمية
+            "func-comp": "https://drive.google.com/file/d/1CNkBQ6q6vCEUGHyxw2lt5ncfy8YEdO9K/view?usp=sharing",           // تمرين شامل للتركيب
+            "func-graph": "https://drive.google.com/file/d/13BX6Kv1vZjcUtE-tonNVgZkVYzM7PkMe/view?usp=sharing",          // انشاء بيان باستعمال بيان آخر
+            
+            // -- المتتاليات العددية --
+            "seq-summary": "https://drive.google.com/file/d/1w3OvYb4_YDIeQWGVU3p6vP7BehargxRa/view?usp=sharing",         // الملخص
+            "seq-sum": "https://drive.google.com/file/d/1MkECWzGf5cT3uNv0d48LTtyMk1iaRxFT/view?usp=sharing",             // تمرين شامل (المجاميع)
+            "seq-ex2": "https://drive.google.com/file/d/1DrIjJhnXrlIPs57i5hvOeBgrAm5Mv6Lx/view?usp=sharing",             // تمرين شاملة 2
+            "seq-bac": "https://drive.google.com/file/d/1FmMaHslSNV0Rgi0F8lHh5T3AU1LSbA9B/view?usp=sharing",             // البكالوريات السابقة
+
+            // -- الدوال الأصلية والحساب التكاملي --
+            "int-summary": "https://drive.google.com/file/d/1QNVpi0JZqeKx5-b3t7peSmGQLxgjGOXS/view?usp=sharing",         // ملخص
+            "int-bac": "https://drive.google.com/file/d/1krpcs8v6AILu7EmbpU9-OL26xY7DSqn1/view?usp=sharing",             // بكالوريات
+
+            // -- الاحتمالات --
+            "prob-summary": "https://drive.google.com/file/d/1_xSLgIAlzdp5udjwXYWxiA5JauEvM5f8/view?usp=sharing",        // ملخص
+            "prob-draw-1": "https://drive.google.com/file/d/1l-ScQhqRM7CiUwVfMG1ryBiTMdj5RWyc/view?usp=sharing",         // تمرين شامل السحب 1
+            "prob-draw-2": "https://drive.google.com/file/d/1sLZgelgg-zh3RwaNpxEFNBmhf7jODTpT/view?usp=sharing",         // تمرين شامل السحب 2
+            "prob-com": "https://drive.google.com/file/d/14bytGIJtGYJSBQjExKLoRgflm2etFj-q/view?usp=sharing",            // تمرين شامل تشكيل لجان
+            "prob-bac": "https://drive.google.com/file/d/14vskO2ubk9JmC2gKbxhonV2Ky98d0w1N/view?usp=sharing",            // البكالوريات السابقة
+
+            // -- الأعداد والحساب --
+            "arith-summary": "https://drive.google.com/file/d/18nclEtiauXztNLcM4u37gH7nVKTaYwbt/view?usp=sharing",       // ملخص
+            "arith-bac": "https://drive.google.com/file/d/1M7lied-OXL5T4Uo1PKcb231CjCx6Gdwq/view?usp=sharing",           // سلسلة التمرينات الواردة في البكالوريا
+            "arith-ext": "https://drive.google.com/file/d/1DPuyFNN784vlTjqjhiG_lz1VWcKIGeqW/view?usp=sharing",           // سلسلة تمرينات خارجية
+            "arith-methods": "https://drive.google.com/file/d/1DWt3bP2RgcWfv6NU7Bh8R864nZGtSS5q/view?usp=sharing",       // طرائق (ملف رائع)
+
+            // -- الأعداد المركبة --
+            "comp-summary": "https://drive.google.com/file/d/1HgDnZDATaWh0-6bDwpoiNOLPZasByX7z/view?usp=sharing",        // الملخص
+            "comp-ex": "https://drive.google.com/file/d/1kxe5WWAvJxYMmO0gnsFEIhGpuWbIHmNS/view?usp=sharing",             // تمرين شامل
+            "comp-points": "https://drive.google.com/file/d/1sWjz73PiYsEmc_Kktg7GztIDYUNhtWzY/view?usp=sharing",         // تمرين شامل لمجموعة النقط مع الحل
+            "comp-bac": "https://drive.google.com/file/d/1vTVMm-tWcEbH0ihgMTbPRmYn4lZsABnx/view?usp=sharing",            // البكالوريات السابقة
+
+            // -- مجلة مراجعة الدوال العددية (مستقلة) --
+            "main-func-magazine": "https://drive.google.com/file/d/1B6abfzR-ZpqhzVu1l0HQbWe3ySjcJSEN/view?usp=sharing",  // المجلة الشاملة
+
+            // -- الاختيارات المتعددة QCM --
+            "qcm-file": "https://drive.google.com/file/d/17lrR2tbh55a9JC-VKJ31hM8t17n35und/view?usp=sharing"             // ملف الـ QCM
+        };
+
+        // 2. روابط المواضيع العشرة الشاملة
+        const EXAMS_LINKS = [
+            { topic: "https://drive.google.com/file/d/1bsK_BJ9_jiUJIZouGQJ3bhsou-Yegd3I/view?usp=drive_link", solution: "#", video: "#" }, // الموضوع 01
+            { topic: "https://drive.google.com/file/d/1QHClU55qv44A_SH2obqtctBHjuPq6HVT/view?usp=drive_link", solution: "#", video: "#" }, // الموضوع 02
+            { topic: "https://drive.google.com/file/d/1GMKvf6jctUoSLN7K2ekYy6PRc6VUAZDd/view?usp=drive_link", solution: "#", video: "#" }, // الموضوع 03
+            { topic: "https://drive.google.com/file/d/1jC175IGSB169TzG7m45-6pxOULSwVLCE/view?usp=drive_link", solution: "#", video: "#" }, // الموضوع 04
+            { topic: "https://drive.google.com/file/d/1pTW1kyywAGvXxn004mKjX9GNDs1EV-vy/view?usp=drive_link", solution: "#", video: "#" }, // الموضوع 05
+            { topic: "https://drive.google.com/file/d/1aKEK_-3UtMSUMgBjwULYdb1w4Fk_-sYf/view?usp=drive_link", solution: "#", video: "#" }, // الموضوع 06
+            { topic: "https://drive.google.com/file/d/1bibIgKmOvXs9d2d0NfIetMJ-4euWikdv/view?usp=drive_link", solution: "#", video: "#" }, // الموضوع 07
+            { topic: "https://drive.google.com/file/d/1uJEk_cwDhhFTQIJidPZhFPnDJWxSAsty/view?usp=drive_link", solution: "#", video: "#" }, // الموضوع 08
+            { topic: "https://drive.google.com/file/d/1JR8aLY5_SHmJRa0xL-6MDCt9coP0eopX/view?usp=drive_link", solution: "#", video: "#" }, // الموضوع 09
+            { topic: "https://drive.google.com/file/d/1KX4NC7XoWFrFiqFP2YGE_oVvTZ_Jz4Au/view?usp=drive_link", solution: "#", video: "#" }  // الموضوع 10
+        ];
+
+        // ===============================================================
+        // (نهاية منطقة الإعدادات - لا تقم بتعديل الأكواد أسفل هذا الخط)
+        // ===============================================================
+
+        // تطبيق الروابط المحفوظة على الأزرار عند تحميل الصفحة
+        document.addEventListener('DOMContentLoaded', () => {
+            for (const [id, url] of Object.entries(FILE_LINKS)) {
+                const el = document.getElementById(id);
+                if (el) el.href = url;
+            }
+        });
+
+        // دوال القوائم المنسدلة
         function toggleMenu(menuId, chevronId) {
             const menu = document.getElementById(menuId);
             const chevron = document.getElementById(chevronId);
@@ -301,6 +431,7 @@
             }
         }
 
+        // توليد المواضيع العشرة وربطها بالمصفوفة
         const topicsContainer = document.getElementById('topics-container');
         for (let i = 1; i <= 10; i++) {
             let num = i < 10 ? '0' + i : i;
@@ -312,9 +443,9 @@
                     </button>
                     <div id="topic-${i}" class="hidden bg-slate-900 border-t border-slate-700 p-3">
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                            <a href="#" target="_blank" class="flex items-center justify-center space-x-2 space-x-reverse bg-blue-600/10 hover:bg-blue-600 border border-blue-600/50 hover:border-blue-600 text-blue-400 hover:text-white px-3 py-2 rounded-md text-sm transition group"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span>الموضوع</span></a>
-                            <a href="#" target="_blank" class="flex items-center justify-center space-x-2 space-x-reverse bg-green-600/10 hover:bg-green-600 border border-green-600/50 hover:border-green-600 text-green-400 hover:text-white px-3 py-2 rounded-md text-sm transition group"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>الحل (PDF)</span></a>
-                            <a href="#" target="_blank" class="flex items-center justify-center space-x-2 space-x-reverse bg-red-600/10 hover:bg-red-600 border border-red-600/50 hover:border-red-600 text-red-400 hover:text-white px-3 py-2 rounded-md text-sm transition group"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg><span>فيديو الحل</span></a>
+                            <a href="${EXAMS_LINKS[i-1].topic}" target="_blank" class="flex items-center justify-center space-x-2 space-x-reverse bg-blue-600/10 hover:bg-blue-600 border border-blue-600/50 hover:border-blue-600 text-blue-400 hover:text-white px-3 py-2 rounded-md text-sm transition group"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span>الموضوع</span></a>
+                            <a href="${EXAMS_LINKS[i-1].solution}" target="_blank" class="flex items-center justify-center space-x-2 space-x-reverse bg-green-600/10 hover:bg-green-600 border border-green-600/50 hover:border-green-600 text-green-400 hover:text-white px-3 py-2 rounded-md text-sm transition group"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>الحل (PDF)</span></a>
+                            <a href="${EXAMS_LINKS[i-1].video}" target="_blank" class="flex items-center justify-center space-x-2 space-x-reverse bg-red-600/10 hover:bg-red-600 border border-red-600/50 hover:border-red-600 text-red-400 hover:text-white px-3 py-2 rounded-md text-sm transition group"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg><span>فيديو الحل</span></a>
                         </div>
                     </div>
                 </div>
@@ -322,6 +453,7 @@
             topicsContainer.innerHTML += topicHtml;
         }
 
+        // إعداد العد التنازلي
         const bacDate = new Date("June 7, 2026 08:00:00").getTime();
         const countdownInterval = setInterval(function() {
             const now = new Date().getTime();
